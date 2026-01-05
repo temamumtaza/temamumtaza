@@ -65,7 +65,7 @@ export function Playground() {
         setError(null);
 
         try {
-            const res = await fetch("/api/generate", {
+            const res = await fetch("/proxy_chat.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
