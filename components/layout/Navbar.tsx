@@ -62,12 +62,11 @@ export function Navbar() {
             </motion.nav>
 
             {/* Mobile Navbar */}
-            <nav className="md:hidden fixed top-0 left-0 right-0 z-50 px-6 py-6 flex items-center justify-between pointer-events-none">
-                {/* Mobile Logo */}
+            <nav className="md:hidden fixed top-0 left-0 right-0 z-50 px-6 py-6 flex items-center justify-center pointer-events-none">
                 <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    className="pointer-events-auto bg-black/50 backdrop-blur-md border border-white/10 rounded-full px-4 py-2"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="pointer-events-auto bg-black/50 backdrop-blur-md border border-white/10 rounded-full px-5 py-2.5 flex items-center justify-between w-full max-w-sm shadow-lg"
                 >
                     <Link
                         href="/"
@@ -76,17 +75,14 @@ export function Navbar() {
                     >
                         Tema Mumtaza
                     </Link>
-                </motion.div>
 
-                {/* Mobile Hamburger toggle */}
-                <motion.button
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    onClick={toggleMenu}
-                    className="pointer-events-auto p-2.5 bg-black/50 backdrop-blur-md border border-white/10 rounded-full text-white/90 hover:text-white transition-colors"
-                >
-                    {isOpen ? <X size={20} /> : <Menu size={20} />}
-                </motion.button>
+                    <button
+                        onClick={toggleMenu}
+                        className="text-white/90 hover:text-white transition-colors p-1"
+                    >
+                        {isOpen ? <X size={20} /> : <Menu size={20} />}
+                    </button>
+                </motion.div>
             </nav>
 
             {/* Mobile Menu Overlay */}
