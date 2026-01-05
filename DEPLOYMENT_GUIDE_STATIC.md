@@ -20,21 +20,24 @@ By default, the key is set to `'YOUR_OPENROUTER_API_KEY_HERE'`.
      $apiKey = $config['OPENROUTER_API_KEY'];
      ```
 
-## 2. Generate the Build
-Run this command in your terminal:
+## 2. Generate the Build (Lakukan di Laptop Anda)
+**JANGAN lakukan di cPanel.** Lakukan di terminal VS Code laptop Anda sendiri.
+
+Jalankan perintah ini:
 ```bash
 npm run build
 ```
-This will create an `out` folder. This folder contains your entire website as static HTML/CSS/JS files.
+Tunggu sampai selesai. Perintah ini akan membuat folder baru bernama `out` di dalam folder project Anda. Folder `out` ini berisi website versi statis (HTML/CSS/JS) yang siap tayang.
 
 ## 3. Upload to cPanel
-1. Go to cPanel File Manager -> `public_html`.
-2. **Delete everything** currently in `public_html` (if empty/fresh).
-3. Open the `out` folder on your computer.
-4. **Select All** files inside `out` -> Compress/Zip them.
-5. Upload the zip to `public_html`.
-6. Extract the zip.
-7. **Ensure `proxy_chat.php` is there.** (It should be, because it was in `public` folder).
+1. Buka **cPanel File Manager**.
+2. Masuk ke folder `public_html`.
+3. **Hapus semua file** yang ada di situ (bersihkan dulu).
+4. Di laptop Anda, buka folder `out`.
+5. **Select All** (pilih semua file di dalam folder out) -> Klik kanan -> **Compress/Zip**.
+6. Upload file zip tersebut ke cPanel `public_html`.
+7. Di cPanel, klik kanan file zip -> **Extract**.
+8. **PENTING:** Pastikan file `proxy_chat.php` ada di situ.
 
 ## 4. Verify
 - Go to `https://temamumtaza.id`.
