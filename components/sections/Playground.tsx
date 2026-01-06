@@ -111,9 +111,9 @@ export function Playground() {
                         className="max-w-3xl w-full z-10"
                     >
                         <div className="text-center mb-10">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6">
-                                <Sparkles className="w-3 h-3 text-blue-400" />
-                                <span className="text-xs font-medium text-white/60">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-b from-white/10 to-transparent border border-white/10 mb-6 shadow-[0_0_10px_-5px_rgba(255,255,255,0.2)]">
+                                <Sparkles className="w-3 h-3 text-blue-300/80" />
+                                <span className="text-xs font-medium bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
                                     Strategic Partner Active
                                 </span>
                             </div>
@@ -175,7 +175,7 @@ export function Playground() {
                     >
                         {/* Header Compact - Fixed at top */}
                         <div className="shrink-0 px-6 py-4 border-b border-white/5 flex items-center justify-between bg-zinc-900/20 backdrop-blur">
-                            <span className="text-sm font-medium text-white/60">Exploration Session</span>
+                            <span className="text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-white/90 to-white/60">Exploration Session</span>
                             <button onClick={() => { setHasStarted(false); setMessages([]); setInput(""); }} className="text-xs text-white/40 hover:text-white transition-colors">End Session</button>
                         </div>
 

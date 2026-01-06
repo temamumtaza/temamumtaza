@@ -56,7 +56,7 @@ export function WhatIDo() {
                             <div className="h-12 w-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-8 group-hover:bg-white/10 transition-colors">
                                 <item.icon className="text-white/80 w-6 h-6" strokeWidth={1.5} />
                             </div>
-                            <h3 className="text-xl font-medium text-white mb-4">{item.title}</h3>
+                            <h3 className="text-xl font-medium mb-4 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70">{item.title}</h3>
                             <p className="text-white/60 leading-relaxed font-light text-[15px]">{item.description}</p>
                         </motion.div>
                     ))}

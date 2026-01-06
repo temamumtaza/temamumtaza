@@ -24,7 +24,7 @@ export function Hero() {
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 1.4, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-lg md:text-xl text-white/60 mb-8 font-medium tracking-wide uppercase"
+                    className="text-lg md:text-xl mb-8 font-medium tracking-wide uppercase bg-clip-text text-transparent bg-gradient-to-r from-white/80 via-white/60 to-white/40"
                 >
                     Tech Entrepreneur · Builder · Strategic Collaborator
                 </motion.p>
