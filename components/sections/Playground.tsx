@@ -65,7 +65,14 @@ export function Playground() {
         setError(null);
 
         try {
-            const res = await fetch("/proxy_chat.php", {
+            // Determine the correct endpoint based on environment
+            // In development (npm run dev), use the Next.js API route
+            // In production (static export), use the PHP proxy file
+            const endpoint = process.env.NODE_ENV === 'development'
+                ? "/api/generate"
+                : "/proxy_chat.php";
+
+            const res = await fetch(endpoint, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
