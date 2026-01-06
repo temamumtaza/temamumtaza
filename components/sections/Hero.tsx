@@ -15,7 +15,7 @@ export function Hero() {
                     transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
                     className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight text-white mb-6"
                 >
-                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300">
+                    <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white/90 to-white/60">
                         Tema Mumtaza
                     </span>
                 </motion.h1>

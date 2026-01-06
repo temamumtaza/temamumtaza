@@ -111,9 +111,9 @@ export function Playground() {
                         className="max-w-3xl w-full z-10"
                     >
                         <div className="text-center mb-10">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-b from-blue-500/10 to-transparent border border-blue-500/20 mb-6 shadow-[0_0_15px_-5px_rgba(59,130,246,0.3)]">
-                                <Sparkles className="w-3 h-3 text-blue-400" />
-                                <span className="text-xs font-medium bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-cyan-200">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-b from-white/10 to-transparent border border-white/10 mb-6 shadow-[0_0_10px_-5px_rgba(255,255,255,0.2)]">
+                                <Sparkles className="w-3 h-3 text-blue-300/80" />
+                                <span className="text-xs font-medium bg-clip-text text-transparent bg-gradient-to-r from-white to-white/70">
                                     Strategic Partner Active
                                 </span>
                             </div>
