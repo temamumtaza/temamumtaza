@@ -6,7 +6,7 @@
 
 // --- CONFIGURATION ---
 // PASTE YOUR OPENROUTER API KEY HERE CAREFULLY
-$apiKey = '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'; 
+$apiKey = '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'; 
 
 // --- CORS HEADERS (Allow fetch from your domain) ---
 header("Access-Control-Allow-Origin: *"); // Change * to your specific domain for better security
